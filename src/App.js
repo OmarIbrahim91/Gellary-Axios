@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+ import axios from "axios";
 
 function App() {
   const [term, setTerm] = useState("");
@@ -36,7 +36,7 @@ function App() {
           },
           headers: {
             Authorization:
-              "Client-ID 89a74f8c26da940b295f7c22ccaf83e3404ac033065c8db15fcbbc3b0639a400"
+              "Client-ID 17175aae92ead72b7214ff713bf7185f8d1f510a0fe2e5f3ae05a7a2dae41459"
           }
         })
         .then(response => {
@@ -58,7 +58,7 @@ function App() {
         },
         headers: {
           Authorization:
-            "Client-ID 89a74f8c26da940b295f7c22ccaf83e3404ac033065c8db15fcbbc3b0639a400"
+            "Client-ID 17175aae92ead72b7214ff713bf7185f8d1f510a0fe2e5f3ae05a7a2dae41459"
         }
       })
       .then(response => {
@@ -70,58 +70,77 @@ function App() {
   };
 
   return (
-    <div className="container-fluid mt-5">
-      <div className="bg-dark p-3 rounded">
-        <form onSubmit={sendRequest} className="form-row">
-          <div className="col">
-            {" "}
-            <input
-              type="text"
-              onChange={changeHandler}
-              className="form-control"
-            />
-          </div>
-          <div className="col-3">
-            <input
-              type="submit"
-              value="Search"
-              className="btn btn-success form-control"
-            />
-          </div>
-        </form>
-      </div>
-      <div className="container-fluid">
-        <div className="d-flex flex-wrap">
+    <div className="container mt-5">
+        <div className="row">
+            <div className="col-12">
+            <div className="bg-dark p-3 rounded">
+              <form onSubmit={sendRequest} className="form-row">
+                <div className="col">
+                  {" "}
+                  <input
+                    type="text"
+                    onChange={changeHandler}
+                    className="form-control"
+                  />
+                </div>
+                <div className="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    className="btn btn-outline-danger bg-dark form-control"
+                  />
+                </div>
+              </form>
+         </div>
+    </div>
+        </div>
+
+      <div className="row justify-content-center  text-center"> 
+        <div className="col-12 col-md-12">
+          
           {pictures.length
             ? pictures.map(pic => (
                 <img
                   src={pic.urls.thumb}
                   alt={pic.alt_description}
                   key={pic.id}
-                  style={{ width: "100px", height: "120px" }}
+                  width="320px"
+                  height='200px'
+                  style={{margin:'3px'}}
                 />
-              ))
-            : null}
+              )) 
+            : null }  
+        </div> 
         </div>
-        <div className="d-flex justify-content-between">
-          <button
+        <div className="row justify-content-center text-center">
+          <div className="col-12">
+            <button
             type="button"
             onClick={pageChange}
             name="dec"
-            className="form-control col-3 btn btn-primary"
+            className=" form-control col-3 btn btn-outline-danger bg-dark "
           >
-            {"<<"}
+            Previos
           </button>
+
+                <button className="btn btn-outline-danger bg-dark" name='inc' onClick={pageChange}>1</button>
+                <button className="btn btn-outline-danger bg-dark" name='inc' onClick={pageChange}>2</button>
+                <button className="btn btn-outline-danger bg-dark" name='inc' onClick={pageChange}>3</button>
+                <button className="btn btn-outline-danger bg-dark" name='inc' onClick={pageChange}>4</button>
+                <button className="btn btn-outline-danger bg-dark" name='inc' onClick={pageChange}>5</button>
+
           <button
             type="button"
             onClick={pageChange}
             name="inc"
-            className="form-control col-3 btn btn-primary"
+            className="form-control col-3 btn btn-outline-danger bg-dark"
           >
-            {">>"}
+            Next
           </button>
+          </div>
+          
         </div>
-      </div>
+      
     </div>
   );
 }

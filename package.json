@@ -1,6 +1,6 @@
 {
-  "homepage": "https://fahimahmadi1985.github.io/axios_project",
-  "name": "axios_project",
+  "homepage": "https://OmarIbrahim91.github.io/Gellary-Axios",
+  "name": "gellary-axios",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,8 +31,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
   }
 }
