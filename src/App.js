@@ -81,6 +81,7 @@ function App() {
                     type="text"
                     onChange={changeHandler}
                     className="form-control"
+                    placeholder="Search your Images as you wish.."
                   />
                 </div>
                 <div className="col-3">
@@ -119,6 +120,7 @@ function App() {
             onClick={pageChange}
             name="dec"
             className=" form-control col-3 btn btn-outline-danger bg-dark "
+            
           >
             Previos
           </button>
