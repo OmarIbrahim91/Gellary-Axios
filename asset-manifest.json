@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Gellary-Axios/static/css/main.34de6062.chunk.css",
+    "main.js": "/Gellary-Axios/static/js/main.96ca3e0d.chunk.js",
+    "main.js.map": "/Gellary-Axios/static/js/main.96ca3e0d.chunk.js.map",
+    "runtime-main.js": "/Gellary-Axios/static/js/runtime-main.6acd794e.js",
+    "runtime-main.js.map": "/Gellary-Axios/static/js/runtime-main.6acd794e.js.map",
+    "static/js/2.0b98e3e6.chunk.js": "/Gellary-Axios/static/js/2.0b98e3e6.chunk.js",
+    "static/js/2.0b98e3e6.chunk.js.map": "/Gellary-Axios/static/js/2.0b98e3e6.chunk.js.map",
+    "index.html": "/Gellary-Axios/index.html",
+    "precache-manifest.700dd2d79b926c4d888f89bb974ea317.js": "/Gellary-Axios/precache-manifest.700dd2d79b926c4d888f89bb974ea317.js",
+    "service-worker.js": "/Gellary-Axios/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/Gellary-Axios/static/css/main.34de6062.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6acd794e.js",
+    "static/js/2.0b98e3e6.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.96ca3e0d.chunk.js"
+  ]
+}
